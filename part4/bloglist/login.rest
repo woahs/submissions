@@ -1,0 +1,16 @@
+post http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "password"
+}
+###
+post http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYwODllNWJmMDUzNjVmMDg5ZTVmODU0MiIsImlhdCI6MTYxOTY1MDEyNH0.0Oi9Gs833tgzK4pDta3rvgFUH9pK7UHPQpi_CzPZE8M
+
+{
+  "title": "Single Page Apps use token authentication",
+  "url": "dummy"
+}
